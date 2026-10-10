@@ -36,9 +36,9 @@ const JWT_SECRET: &[u8] = b"657fecd7df7ea86c21418c2d77105b23662930561785b1a1ba6c
 
 #[derive(Serialize, Deserialize)]
 struct Claims {
-    sub: i64,         // user id
+    sub: i64,         
     username: String,
-    exp: usize,       // expiry time, in seconds since 1970
+    exp: usize,      
 }
 
 #[derive(Serialize)]
